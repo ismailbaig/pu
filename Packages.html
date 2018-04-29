@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
+    <link href="style/main.css" rel="stylesheet" />
+
+    <title>Perfect Umrah</title>
+</head>
+<body style="background:#e9e9e9">
+
+    <nav class="navbar navbar-findcond fixed-top navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Perfect Umrah</a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-navicon"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hajj <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Umrah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ramzan Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Islamic Tourism</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-top:100px; width:100%; overflow:hidden" class="col-sm-12 col-xm-12">
+        <div class="container">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Umrah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Hajj</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu2">Ramzan Package</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu3">Islamic Tours</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="tab-pane active">
+                    <div class="col-lg-12 col-sm-12 col-xs-12 bg-white rounded p-4">
+                        <div class="form-row">
+                            <div class="form-group col-lg-2 col-sm-6 col-xm-6">
+                                <label for="inputCity">No of Days</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-2 col-sm-6 col-xm-6">
+                                <label for="inputState">Departing Month</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-2 col-sm-6 col-xm-6">
+                                <label for="inputZip">Departing Year</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+
+                            <div class="form-group col-lg-4 col-sm-6 col-xm-6">
+                                <label for="inputZip">Departing Year</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-auto my-4">
+                                <button type="button" class="btn btn-primary btn-lg">Search</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-lg-3 border p-3 mt-3 bg-white col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputState">Sort by</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom m-2"></div>
+                                <div class="form-group">
+                                    <label for="inputState">Filter by</label>
+                                    <div data-role="rangeslider">
+
+                                        <input type="range" class="form-control" name="price-min" id="price-min" value="200" min="0" max="1000">
+
+                                    </div>
+                                </div>
+                                <div class="border-bottom m-2"></div>
+                                <div class="form-group">
+                                    <label>Flights: </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">All</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Direct</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Via </label>
+                                    </div>
+                                </div>
+
+                                <div class="border-bottom m-2"></div>
+                                <div class="w-100">
+                                    <h6 class="float-left">Rating: </h6>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+
+                                <div class="border-bottom m-2"></div>
+
+                                <div class="w-100">
+                                    <h6 class="text-secondary">Package Class</h6>
+                                    <form>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">All
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Delux
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Semi Delux
+                                            </label>
+                                        </div>
+                                        <div class="form-check disabled">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Economic
+                                            </label>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="border-bottom m-2"></div>
+
+                                <div class="w-100">
+                                    <h6>Room Sharing</h6>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">All</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">5 Sharing</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" disabled>4 Sharing</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" disabled>3 Sharing</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-9 mt-1 col-sm-12 col-xs-12">
+                                <div class="col-lg-12 mt-3 ml-3 rounded bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12 col-xs-12 no-gutters">
+                                            <img class="img-fluid rounded-left" src="images/package.jpg" />
+                                        </div>
+                                        <div class="col-lg-8 p-1 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class=" col-md-12 pt-2" style="overflow:hidden">
+                                                        <h5>
+                                                            15 Days - Regal Best Pack
+                                                            <span class="p-1 h6 bg-warning text-black rounded ml-2">5 Star</span>
+                                                        </h5>
+
+                                                        <div class="p-1 bg-info text-white float-left rounded">Delux</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Sharing Rooms</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Direct Flight</div>
+                                                    </div>
+                                                    <div class=" col-md-12 mt-2">
+                                                        <h5 class="text-secondary text-left">Regal Tours & Travels</h5>
+                                                        <h6 class="text-secondary text-left">
+                                                            Departure :
+                                                            <span class="text-success">
+                                                                20/03/2018
+                                                            </span>
+                                                        </h6>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="w-100">
+
+                                                        <div class="p-1 mt-2 h2 text-center">₹ 60999</div>
+                                                        <div class="w-100">
+                                                            <a href="Package.html" target="_blank" class="btn btn-outline-info btn-block btn-lg">View</a>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-3 ml-3 rounded bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12 col-xs-12 no-gutters">
+                                            <img class="img-fluid rounded-left" src="images/package.jpg" />
+                                        </div>
+                                        <div class="col-lg-8 p-1 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class=" col-md-12 pt-2" style="overflow:hidden">
+                                                        <h5>
+                                                            15 Days - Regal Best Pack
+                                                            <span class="p-1 h6 bg-warning text-black rounded ml-2">5 Star</span>
+                                                        </h5>
+
+                                                        <div class="p-1 bg-info text-white float-left rounded">Delux</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Sharing Rooms</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Direct Flight</div>
+                                                    </div>
+                                                    <div class=" col-md-12 mt-2">
+                                                        <h5 class="text-secondary text-left">Regal Tours & Travels</h5>
+                                                        <h6 class="text-secondary text-left">
+                                                            Departure :
+                                                            <span class="text-success">
+                                                                20/03/2018
+                                                            </span>
+                                                        </h6>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="w-100">
+
+                                                        <div class="p-1 mt-2 h2 text-center">₹ 60999</div>
+                                                        <div class="w-100">
+                                                            <a href="Package.html" target="_blank" class="btn btn-outline-info btn-block btn-lg">View</a>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mt-3 ml-3 rounded bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12 col-xs-12 no-gutters">
+                                            <img class="img-fluid rounded-left" src="images/package.jpg" />
+                                        </div>
+                                        <div class="col-lg-8 p-1 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class=" col-md-12 pt-2" style="overflow:hidden">
+                                                        <h5>
+                                                            15 Days - Regal Best Pack
+                                                            <span class="p-1 h6 bg-warning text-black rounded ml-2">5 Star</span>
+                                                        </h5>
+
+                                                        <div class="p-1 bg-info text-white float-left rounded">Delux</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Sharing Rooms</div>
+                                                        <div class="p-1 bg-info text-white float-left rounded ml-2">5 Direct Flight</div>
+                                                    </div>
+                                                    <div class=" col-md-12 mt-2">
+                                                        <h5 class="text-secondary text-left">Regal Tours & Travels</h5>
+                                                        <h6 class="text-secondary text-left">
+                                                            Departure :
+                                                            <span class="text-success">
+                                                                20/03/2018
+                                                            </span>
+                                                        </h6>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="w-100">
+
+                                                        <div class="p-1 mt-2 h2 text-center">₹ 60999</div>
+                                                        <div class="w-100">
+                                                            <a href="Package.html" target="_blank" class="btn btn-outline-info btn-block btn-lg">View</a>
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="menu1" class="container tab-pane fade">
+                    <br>
+                    <h3>Hajj</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade">
+                    <br>
+                    <h3>Ramzan Package</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="menu3" class="container tab-pane fade">
+                    <br>
+                    <h3>Islamic Tours</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue-grey lighten-5 pt-0 mt-4">
+
+        <div style="background-color: #21d192;">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--Grid column-->
+                    <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text text-center text-md-left">
+                            <strong>Get connected with us on social networks!</strong>
+                        </h6>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-12 col-md-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fa fa-facebook white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Perfect Umrah</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!--/.First column-->
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Packages</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class="dark-grey-text">Hajj</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Umrah</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Ramdan</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Islamic Tourism</a>
+                    </p>
+                </div>
+                <!--/.Second column-->
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class="dark-grey-text">About us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="dark-grey-text">Contact Us</a>
+                    </p>
+
+                </div>
+                <!--/.Third column-->
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> New York, NY 10012, US
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@example.com
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 01 234 567 89
+                    </p>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+        <!-- Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright:
+            <a href="https://www.cnaptic.in">
+                <strong> Cnaptic Technologies</strong>
+            </a>
+        </div>
+        <!--/.Copyright -->
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

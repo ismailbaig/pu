@@ -1,0 +1,25 @@
+/*.juv{
+    border:1px solid red;
+    padding-left: 100px;
+    -webkit-align-content: center;
+    align-content: center;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}*/
+
+#navbarNav div{
+    -webkit-flex: 1; /* Safari 6.1+ */
+    flex:1;
+}
+
+
+#navbarNav {
+    border: 1px solid black; 
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+}
